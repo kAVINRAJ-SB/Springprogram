@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean id = "apple" class = "com.test.example.Apple">
+<property name="vegetable" ref="vegetable"></property>
+<property name="tomato" ref="tomato"></property>
+</bean>
+<bean id = "vegetable" class ="com.test.example.Vegetable"></bean>
+<bean id = "tomato" class = "com.test.example.Tomato"></bean>
+</beans>

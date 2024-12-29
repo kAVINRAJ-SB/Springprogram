@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+   <bean id="mclass" class="com.test.sample.Myclass"></bean>
+   <bean id="dog" class="com.test.sample.Dog">
+        <property name="name" value="i am from bean" />
+        <property name="num" value="34" /> 
+        <property name="myclass" ref="mclass"></property>
+
+        <constructor-arg value="welcome"></constructor-arg> 
+        <constructor-arg value="10" type="int"></constructor-arg> 
+    </bean>
+     <bean id="lion" class="com.test.sample.Lion"></bean>
+  
+
+</beans>
